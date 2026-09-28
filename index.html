@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gavran Fresh Farm</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🐄 Gavran Fresh Farm
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <span class="badge">
+                FARM FRESH • LOCAL • TRUSTED
+            </span>
+
+            <h1>
+                Fresh From
+                <span>Our Farm</span>
+                To Your Home
+            </h1>
+
+            <p>
+                Fresh buffalo milk, farm-fresh eggs and healthy
+                farm chickens — directly from our farm.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="primary-btn">
+                    🛒 View Products
+                </a>
+
+                <a href="tel:+917387370263" class="secondary-btn">
+                    📞 Call Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="farm-circle">
+                🐄
+            </div>
+
+            <div class="floating-card card-one">
+                🥛
+                <div>
+                    <strong>Fresh Milk</strong>
+                    <small>₹90 / litre</small>
+                </div>
+            </div>
+
+            <div class="floating-card card-two">
+                🥚
+                <div>
+                    <strong>Farm Eggs</strong>
+                    <small>₹15 / egg</small>
+                </div>
+            </div>
+
+            <div class="floating-card card-three">
+                🐔
+                <div>
+                    <strong>Farm Chicken</strong>
+                    <small>Fresh & Healthy</small>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HIGHLIGHTS -->
+
+    <section class="highlights">
+
+        <div class="highlight">
+            <span>🥛</span>
+            <h3>Fresh Milk</h3>
+            <p>Buffalo Milk</p>
+        </div>
+
+        <div class="highlight">
+            <span>🥚</span>
+            <h3>Fresh Eggs</h3>
+            <p>Farm Fresh</p>
+        </div>
+
+        <div class="highlight">
+            <span>🐔</span>
+            <h3>Farm Chicken</h3>
+            <p>Healthy & Fresh</p>
+        </div>
+
+        <div class="highlight">
+            <span>🌿</span>
+            <h3>Local Farm</h3>
+            <p>Direct From Farm</p>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+
+    <section id="products" class="products-section">
+
+        <div class="section-heading">
+
+            <span>OUR PRODUCTS</span>
+
+            <h2>Fresh Farm Products</h2>
+
+            <p>
+                Quality products directly from our farm.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="productSearch"
+                placeholder="🔍 Search milk, eggs or chicken..."
+            >
+
+        </div>
+
+
+        <div class="products-grid">
+
+
+            <!-- MILK -->
+
+            <div class="product-card" data-name="milk buffalo milk">
+
+                <div class="product-icon milk-icon">
+                    🥛
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">
+                        FARM FRESH
+                    </span>
+
+                    <h3>Fresh Buffalo Milk</h3>
+
+                    <p>
+                        Pure and fresh buffalo milk
+                        from our farm.
+                    </p>
+
+                    <div class="product-price">
+                        ₹90 <small>/ litre</small>
+                    </div>
+
+                    <button
+                        class="product-order"
+                        onclick="selectProduct('Milk')">
+
+                        Order Milk →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- EGGS -->
+
+            <div class="product-card" data-name="egg eggs">
+
+                <div class="product-icon egg-icon">
+                    🥚
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">
+                        FARM FRESH
+                    </span>
+
+                    <h3>Fresh Farm Eggs</h3>
+
+                    <p>
+                        Fresh eggs collected from
+                        our own farm chickens.
+                    </p>
+
+                    <div class="product-price">
+                        ₹15 <small>/ egg</small>
+                    </div>
+
+                    <button
+                        class="product-order"
+                        onclick="selectProduct('Eggs')">
+
+                        Order Eggs →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHICKEN -->
+
+            <div class="product-card" data-name="chicken">
+
+                <div class="product-icon chicken-icon">
+                    🐔
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">
+                        FARM CHICKEN
+                    </span>
+
+                    <h3>Farm Chicken</h3>
+
+                    <p>
+                        Healthy chickens available
+                        directly from our farm.
+                    </p>
+
+                    <div class="product-price chicken-price">
+                        Contact for Price
+                    </div>
+
+                    <button
+                        class="product-order"
+                        onclick="selectChicken()">
+
+                        Enquire on WhatsApp →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRICE -->
+
+    <section class="price-section">
+
+        <div class="price-heading">
+
+            <span>SIMPLE PRICING</span>
+
+            <h2>Our Current Rates</h2>
+
+        </div>
+
+
+        <div class="price-table">
+
+            <div class="price-row">
+
+                <span>
+                    <span class="price-emoji">🥛</span>
+                    Buffalo Milk
+                </span>
+
+                <strong>₹90 / Litre</strong>
+
+            </div>
+
+
+            <div class="price-row">
+
+                <span>
+                    <span class="price-emoji">🥚</span>
+                    Farm Eggs
+                </span>
+
+                <strong>₹15 / Egg</strong>
+
+            </div>
+
+
+            <div class="price-row">
+
+                <span>
+                    <span class="price-emoji">🐔</span>
+                    Farm Chicken
+                </span>
+
+                <strong>Contact Us</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <span>ABOUT OUR FARM</span>
+
+            <h2>
+                Freshness You Can
+                <strong>Trust.</strong>
+            </h2>
+
+            <p>
+                We provide fresh farm products directly
+                from our own buffaloes and chickens.
+            </p>
+
+            <p>
+                Our aim is to provide good-quality,
+                fresh and locally available products
+                to our customers.
+            </p>
+
+
+            <div class="about-points">
+
+                <div>✓ Fresh Products</div>
+
+                <div>✓ Local Farm</div>
+
+                <div>✓ Quality Focused</div>
+
+                <div>✓ Direct From Farm</div>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="big-farm-icon">
+                🐄
+            </div>
+
+            <h3>
+                Farm Fresh
+            </h3>
+
+            <p>
+                Milk • Eggs • Chicken
+            </p>
+
+            <div class="mini-icons">
+                🥛 🥚 🐔
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUALITY -->
+
+    <section class="quality-section">
+
+        <div class="section-heading">
+
+            <span>WHY CHOOSE US</span>
+
+            <h2>Our Promise</h2>
+
+        </div>
+
+
+        <div class="quality-grid">
+
+            <div class="quality-card">
+
+                <div>🌿</div>
+
+                <h3>Fresh</h3>
+
+                <p>
+                    Fresh products from our farm.
+                </p>
+
+            </div>
+
+
+            <div class="quality-card">
+
+                <div>🥛</div>
+
+                <h3>Quality</h3>
+
+                <p>
+                    We focus on good product quality.
+                </p>
+
+            </div>
+
+
+            <div class="quality-card">
+
+                <div>🏡</div>
+
+                <h3>Local</h3>
+
+                <p>
+                    Farm products available locally.
+                </p>
+
+            </div>
+
+
+            <div class="quality-card">
+
+                <div>❤️</div>
+
+                <h3>Trust</h3>
+
+                <p>
+                    Freshness and customer trust matter.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ORDER -->
+
+    <section id="order" class="order-section">
+
+        <div class="section-heading">
+
+            <span>QUICK ORDER</span>
+
+            <h2>Place Your Order</h2>
+
+            <p>
+                Select product and quantity.
+            </p>
+
+        </div>
+
+
+        <div class="order-box">
+
+            <label>
+                Select Product
+            </label>
+
+            <select
+                id="orderProduct"
+                onchange="updatePrice()">
+
+                <option value="milk">
+                    Fresh Buffalo Milk - ₹90/Litre
+                </option>
+
+                <option value="eggs">
+                    Fresh Farm Eggs - ₹15/Egg
+                </option>
+
+            </select>
+
+
+            <label>
+                Quantity
+            </label>
+
+
+            <div class="quantity-control">
+
+                <button onclick="changeQuantity(-1)">
+                    −
+                </button>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    value="1"
+                    min="1"
+                    onchange="calculateTotal()"
+                >
+
+                <button onclick="changeQuantity(1)">
+                    +
+                </button>
+
+            </div>
+
+
+            <div class="total-box">
+
+                <span>
+                    Total Amount
+                </span>
+
+                <strong id="totalPrice">
+                    ₹90
+                </strong>
+
+            </div>
+
+
+            <button
+                class="whatsapp-order"
+                onclick="sendOrder()">
+
+                💬 Order on WhatsApp
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact-section">
+
+        <div class="contact-content">
+
+            <span>CONTACT US</span>
+
+            <h2>
+                Want Fresh Farm Products?
+            </h2>
+
+            <p>
+                Call us or contact us on WhatsApp
+                for orders and enquiries.
+            </p>
+
+
+            <div class="contact-address">
+
+                📍 <strong>Our Farm Address</strong>
+
+                <p>
+                    Charholi Khurd, Kankade City,<br>
+                    Near Water Plant, Alandi,<br>
+                    Taluka Khed, Pune, Maharashtra
+                </p>
+
+            </div>
+
+
+            <div class="contact-buttons">
+
+                <a
+                    href="tel:+917387370263"
+                    class="contact-button">
+
+                    📞 7387370263
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/917387370263"
+                    target="_blank"
+                    class="contact-button whatsapp-button">
+
+                    💬 WhatsApp Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🐄 Gavran Fresh Farm
+        </div>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#products">Products</a>
+
+            <a href="#about">About</a>
+
+            <a href="#order">Order</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Gavran Fresh Farm. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- FLOATING WHATSAPP -->
+
+    <a
+        href="https://wa.me/917387370263"
+        target="_blank"
+        class="floating-whatsapp">
+
+        💬
+
+    </a>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
